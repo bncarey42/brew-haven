@@ -1,14 +1,15 @@
 <template>
-  <div id="app" class=".bg-dark">
-    <sidebar/>
+  <div id="app">
+    <!--<Sidebar/>-->
+    <b-btn v-if="breweries" class="float-left" @click="breweries = null">back to map</b-btn>
     <div v-if="breweries">
-      <brewer-card  v-for="brewer in breweries" 
+      <BrewerCard  v-for="brewer in breweries" 
                   :key="brewer.id" 
                   :brewer="brewer">
-      </brewer-card>
+      </BrewerCard>
     </div>
     <div v-else>
-      <brew-map>
+      <BrewMap/>
     </div>
   </div>
 </template>
@@ -16,11 +17,25 @@
 <script>
 
 
+import EB from "./EB";
+
 export default {
   name: 'App',
   data: function() {
     return {
-      breweries: {},
+      breweries: null,
+      baseURL: 'https://api.openbrewerydb.org/breweries'
+    }
+  },
+  created() {
+    EB.$on('load-breweries-by-state', state_breweries => this.loadBrewsByState(state_breweries));
+  },
+  methods: {
+    loadBrewsByState(stateAbriv){
+      fetch(`${this.baseURL}?by_state=${stateAbriv}`, {method:'GET'})
+              .then(res => res.json())
+              .then(response => this.breweries = response)
+              .catch(err=>console.log(err));
     }
   }
 }
@@ -39,7 +54,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: var(--dark);
     margin: 0 3rem;
     margin-top: 60px;
 }

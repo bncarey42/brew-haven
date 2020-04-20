@@ -3,7 +3,7 @@
     :title="brewer.name"
     img-top
     style="max-width: 20rem;"
-    class="brew-card rounded shaddow-sm d-inline-block mb-2"
+    class="brew-card rounded shadow-sm d-inline-block m-2 bg-light"
   >
     <b-card-text>
       {{brewer.tags}}
@@ -13,6 +13,7 @@
 
 <script>
 export default {
+  name: "BrewerCard",
   props: {
     brewer: Object,
   }
