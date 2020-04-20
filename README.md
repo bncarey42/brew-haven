@@ -1,24 +1,3 @@
 # brew-haven
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Brew Haven is a front end for the **[Open Brewery DB](https://www.openbrewerydb.org/)**
+It alows for users to search breweries as recorded by the inital dataset from [Brewers Association](https://www.brewersassociation.org/).
