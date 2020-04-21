@@ -23,6 +23,5 @@ Vue.component('BrewerCard', BrewerCard);
 Vue.component('BrewMap', BrewMap);
 
 new Vue({
-  disableHostCheck: true,
   render: h => h(App),
 }).$mount('#app');
