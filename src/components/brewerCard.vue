@@ -14,7 +14,6 @@
                 <p class="m-0">Brewery Type: {{brewer.brewery_type}}</p>
                 <p class="m-0">City: {{brewer.city}}</p>
                 <p class="m-0">Address: {{brewer.street}}</p>
-                <p class="m-0">Website: <a :href="brewer.website_url"></a></p>
             </div>
         </b-card-text>
     </b-card>
