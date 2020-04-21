@@ -1,0 +1,12 @@
+:root {
+    --yellow:"#f7bc13";
+    --orange: "#dd5d00";
+    --dark-blue: "#293858";
+    --light-beige: "#f2f1d3";
+}
+
+body {
+    background-color: #2c3e50;
+}
+
+

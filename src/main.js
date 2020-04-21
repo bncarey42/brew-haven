@@ -12,11 +12,13 @@ Vue.use(IconsPlugin);
 
 
 import App from './App.vue';
-import Sidebar from './components/sidebar';
-import BrewMap from "./components/brewMap"
+import Loading from "./components/loading";
+import BrewMap from "./components/brewMap";
+import BrewerList from "./components/brewerList";
 import BrewerCard from './components/brewerCard';
 
-Vue.component('Sidebar', Sidebar);
+Vue.component('Loading', Loading);
+Vue.component('BrewerList', BrewerList);
 Vue.component('BrewerCard', BrewerCard);
 Vue.component('BrewMap', BrewMap);
 

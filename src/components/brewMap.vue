@@ -1,5 +1,9 @@
 <template>
-	<radio-svg-map v-model="selectedState" :map="map"/>
+	<div class="row">
+		<div class="col-8 offset-2">
+			<radio-svg-map v-model="selectedState" :map="map"/>
+		</div>
+	</div>
 </template>
 
 <script>
