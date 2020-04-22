@@ -3,17 +3,17 @@
 
             img-top
             style="max-width: 20rem;"
-            class="brew-card border-0 shadow-sm d-inline-block bg-dark text-light m-2"
+            class="brew-card border-0 shadow-sm d-inline-block bg-white m-2"
     >
         <b-card-title>
-            <a :href="brewer.website_url" target="_blank" style="color: #f7bc13;"><i class="fas fa-beer p-1"></i> {{brewer.name}}</a>
+            <a :href="brewer.website_url" target="_blank"><i class="fas fa-beer mr-1 text-yellow"></i><strong class="text-dark-blue">{{brewer.name}}</strong></a>
         </b-card-title>
         <b-card-text>
-
             <div class="text-left">
-                <p class="m-0">Brewery Type: {{brewer.brewery_type}}</p>
-                <p class="m-0">City: {{brewer.city}}</p>
-                <p class="m-0">Address: {{brewer.street}}</p>
+                <p class="m-0"><strong>Brewery Type:</strong> {{brewer.brewery_type}}</p>
+                <p class="m-0"><strong>Address:</strong> {{brewer.street}}</p>
+                <p class="m-0"><strong>City:</strong> {{brewer.city}}</p>
+                <p class="m-0"><strong>State:</strong> {{brewer.state}}</p>
             </div>
         </b-card-text>
     </b-card>
@@ -31,7 +31,7 @@
 <style scoped>
     .brew-card {
         overflow: hidden;
-        width: 25rem;
-        height: 15rem;
+        max-height: 20rem;
+        max-width: 25rem;
     }
 </style>

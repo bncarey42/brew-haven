@@ -1,0 +1,67 @@
+/* germania-one-regular - latin */
+@font-face {
+    font-family: 'Germania One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/germania-one-v7-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Germania One'), local('GermaniaOne-Regular'),
+    url('../fonts/germania-one-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/germania-one-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/germania-one-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/germania-one-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/germania-one-v7-latin-regular.svg#GermaniaOne') format('svg'); /* Legacy iOS */
+}
+
+/* aleo-regular - latin */
+@font-face {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/aleo-v3-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Aleo Regular'), local('Aleo-Regular'),
+    url('../fonts/aleo-v3-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/aleo-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/aleo-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/aleo-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/aleo-v3-latin-regular.svg#Aleo') format('svg'); /* Legacy iOS */
+}
+
+:root {
+    --yellow:               #f7bc13;
+    --yellow-muted:         #a17b0d;
+    --orange:               #dd5d00;
+    --orange-muted:         #973f00;
+    --dark-blue:            #293858;
+    --light-beige:          #f2f1d3;
+    --light-beige-muted:    #a5a490;
+    --bg-color:             #2c3e50;
+}
+
+.font-family-main { font-family: 'Aleo', serif; }
+
+.font-family-header { font-family: "Germania One", cursive; }
+
+.bg-yellow { background-color: var(--yellow); }
+.bg-yellow:hover { background-color: var(--yellow-muted); }
+
+.bg-dark-blue { background-color: var(--dark-blue); }
+
+.bg-orange { background-color: var(--orange); }
+.bg-orange:hover { background-color: var(--orange-muted); }
+
+.bg-light-beige { background-color: var(--light-beige); }
+
+.bg-grey { background-color: var(--bg-color); }
+
+.text-yellow { color: var(--yellow); }
+
+.text-dark-blue { color: var(--dark-blue); }
+
+.text-orange { color: var(--orange); }
+
+.text-light-beige { color: var(--light-beige); }
+
+.text-grey { color: var(--bg-color); }
+
+
+

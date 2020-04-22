@@ -1,6 +1,7 @@
 <template>
     <div v-if="loading">
         <i id='heartbeat' class="fas fa-beer"></i>
+        <p>{{msg}}</p>
     </div>
 </template>
 
