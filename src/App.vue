@@ -51,7 +51,7 @@
                 this.breweries = [];
                 this.searchType = null;
                 this.searchVal = null;
-                this.more = false;
+                this.more = true;
             },
             loadBrews: function (page = 1, perPage = 25) {
                 EB.$emit('toggle-loading', `loading breweries for ${this.searchVal}`);
